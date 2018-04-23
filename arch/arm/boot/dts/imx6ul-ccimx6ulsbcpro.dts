@@ -152,6 +152,12 @@
 			interrupt-controller;
 			#interrupt-cells = <2>;
 		};
+
+		mca_ioexp_adc: adc {
+			compatible = "digi,mca-ioexp-adc";
+			digi,adc-ch-list = <3 4 5>;
+			digi,adc-vref = <3300000>;
+		};
 	};
 };
 
@@ -481,4 +487,3 @@
 		>;
 	};
 };
-
